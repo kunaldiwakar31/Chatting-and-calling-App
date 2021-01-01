@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_light_disabled"
+    android:fitsSystemWindows="true"
+    tools:context=".ChatActivity">
+
+    <include
+        android:id="@+id/chatBarLayout"
+        layout="@layout/appbarlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/chatRefreshLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/common_google_signin_btn_text_dark_pressed"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chatBarLayout">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/messageList"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chatBarLayout"
+            app:layout_constraintVertical_bias="0.493">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:clipToPadding="true"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/chataddButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/common_google_signin_btn_text_dark_pressed"
+            android:contentDescription="@string/todo"
+            android:padding="5dp"
+            app:srcCompat="@drawable/chataddbutton" />
+
+        <EditText
+            android:id="@+id/chatMessageText"
+            android:layout_width="316dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="8"
+            android:autofillHints=""
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:ems="10"
+            android:hint="@string/enter_a_text_message"
+            android:inputType="textPersonName"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp" />
+
+        <ImageButton
+            android:id="@+id/chatSendButton"
+            android:layout_width="56dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/common_google_signin_btn_text_dark_pressed"
+            android:contentDescription="@string/todo"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="15dp"
+            android:scaleType="center"
+            app:srcCompat="@drawable/chatsendbutton18" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

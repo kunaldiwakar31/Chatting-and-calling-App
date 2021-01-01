@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Conversation App</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="log_out">Log Out</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="all_users">All Users</string>
+    <string name="create_a_new_account">Create a New Account</string>
+    <string name="login">Login</string>
+    <string name="login_to_your_account">Login To Your Account</string>
+    <string name="welcome_to_chatting_app">Welcome To Chatting App</string>
+    <string name="register">Register</string>
+    <string name="need_a_account">Need a Account?</string>
+    <string name="or_already_have_a_account">Or, Already Have a Account?</string>
+    <string name="already_registered">Already Registered?</string>
+    <string name="not_registered">Not Registered?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="change_status">change status</string>
+    <string name="change_image">Change image</string>
+    <string name="hey_there_i_am_using_chatting_app">Hey there, I am using Chatting App</string>
+    <string name="your_status">Your Status</string>
+    <string name="display_name">Display Name</string>
+    <string name="default_status">default status</string>
+    <string name="name">Name</string>
+    <string name="last_seen">Last seen</string>
+    <string name="enter_a_text_message">Enter a Text Message</string>
+    <string name="textview">TextView</string>
+    <string name="_00_00">00:00</string>
+    <string name="delivered">delivered</string>
+    <string name="search_user">Search User</string>
+    <string name="call">Call</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="verify">Verify</string>
+    <string name="welcome_to_chatting_ncalling_app"><![CDATA[Welcome To Chatting & \nCalling App]]></string>
+    <string name="app_icon">App icon</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="get_otp">Get otp</string>
+    <string name="search_user_menu">Search user</string>
+    <string name="nothing_to_show">Nothing to Show</string>
+    <string name="send_friend_request">Send friend request</string>
+    <string name="decline_friend_request">Decline friend Request</string>
+    <string name="todo">TODO</string>
+
+</resources>
